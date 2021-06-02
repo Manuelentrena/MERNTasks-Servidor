@@ -16,7 +16,7 @@ app.use(cors());
 //Express.json habilitar
 app.use(express.json({ extended: true }));
 //Puerto de la app
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 //Importar nuestras rutas
 app.use("/api/usuarios", usuariosRouter);
 app.use("/api/auth", authRouter);
